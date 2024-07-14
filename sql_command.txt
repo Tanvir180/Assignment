@@ -1,0 +1,14 @@
+CREATE TABLE campaigns (
+    Id INT AUTO_INCREMENT PRIMARY KEY,
+    code VARCHAR(255),
+    name VARCHAR(255),
+    goal INT,
+    starts DATE,
+    ends DATE,
+    campaign_type_id INT
+);
+
+CREATE TABLE campaign_types (
+    Id INT AUTO_INCREMENT PRIMARY KEY,
+    type_name VARCHAR(255)
+);
